@@ -19,30 +19,4 @@ object ServiceLocator {
     private val dataRepository: DataRepository by lazy {
         DataRepositoryImpl(localDataSource)
     }
-
-    private val getDataListUseCase: GetDataListUseCase by lazy {
-        GetDataListUseCase(dataRepository)
-    }
-
-    private val getDataDetailUseCase: GetDataDetailUseCase by lazy {
-        GetDataDetailUseCase(dataRepository)
-    }
-
-    fun provideDataListViewModelFactory(): ViewModelProvider.Factory {
-        return object : ViewModelProvider.Factory {
-            @Suppress("UNCHECKED_CAST")
-            override fun <T : ViewModel> create(modelClass: Class<T>): T {
-                return DataListViewModel(getDataListUseCase) as T
-            }
-        }
-    }
-
-    fun provideDataDetailViewModelFactory(): ViewModelProvider.Factory {
-        return object : ViewModelProvider.Factory {
-            @Suppress("UNCHECKED_CAST")
-            override fun <T : ViewModel> create(modelClass: Class<T>): T {
-                return DataDetailViewModel(getDataDetailUseCase) as T
-            }
-        }
-    }
 }
