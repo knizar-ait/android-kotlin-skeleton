@@ -15,25 +15,25 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/tvProductName"
+            android:id="@+id/tvDataName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:textStyle="bold"
-            tools:text="Product Name"
+            tools:text="Data Name"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
-            android:id="@+id/tvProductPrice"
+            android:id="@+id/tvDataPrice"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:textSize="16sp"
             android:textColor="@color/price_color"
             tools:text="$999.99"
-            app:layout_constraintTop_toBottomOf="@id/tvProductName"
+            app:layout_constraintTop_toBottomOf="@id/tvDataName"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 

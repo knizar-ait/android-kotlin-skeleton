@@ -1,4 +1,4 @@
-package com.interview.skeleton.presentation.productdetail
+package com.interview.skeleton.presentation.detail
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

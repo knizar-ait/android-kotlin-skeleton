@@ -7,8 +7,6 @@ import com.interview.skeleton.data.repository.DataRepositoryImpl
 import com.interview.skeleton.domain.repository.DataRepository
 import com.interview.skeleton.domain.usecase.GetDataDetailUseCase
 import com.interview.skeleton.domain.usecase.GetDataListUseCase
-import com.interview.skeleton.presentation.productdetail.ProductDetailViewModel
-import com.interview.skeleton.presentation.productlist.ProductListViewModel
 
 object ServiceLocator {
 

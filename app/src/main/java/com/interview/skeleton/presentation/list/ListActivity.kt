@@ -11,13 +11,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.interview.skeleton.R
 import com.interview.skeleton.di.ServiceLocator
-import com.interview.skeleton.presentation.productdetail.DetailActivity
+import com.interview.skeleton.presentation.detail.DetailActivity
 
 class ListActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var progressBar: ProgressBar
-    private lateinit var adapter: ProductListAdapter
+    private lateinit var adapter: ListAdapter
 
     private val viewModel: ListViewModel by viewModels {
         ServiceLocator.provideDataListViewModelFactory()
@@ -30,15 +30,15 @@ class ListActivity : AppCompatActivity() {
         setupViews()
         setupObservers()
 
-        viewModel.loadProducts()
-        viewModel.loadProducts()
+        viewModel.loadDataList()
+        viewModel.loadDataList()
     }
 
     private fun setupViews() {
         recyclerView = findViewById(R.id.recyclerView)
         progressBar = findViewById(R.id.progressBar)
 
-        adapter = ProductListAdapter { data ->
+        adapter = ListAdapter { data ->
             val intent = Intent(this, DetailActivity::class.java)
             intent.putExtra("DATA_ID", data.id)
             startActivity(intent)

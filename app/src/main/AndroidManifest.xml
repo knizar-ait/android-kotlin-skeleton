@@ -10,7 +10,7 @@
         android:theme="@style/Theme.SkeletonApp">
 
         <activity
-            android:name=".presentation.productlist.ProductListActivity"
+            android:name=".presentation.list.ListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +19,7 @@
         </activity>
 
         <activity
-            android:name=".presentation.productdetail.ProductDetailActivity"
+            android:name=".presentation.detail.DetailActivity"
             android:exported="false" />
     </application>
 

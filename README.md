@@ -1,6 +1,6 @@
 # Android Kotlin Skeleton Project - Interview Code
 
-This is a minimal Android application built with Kotlin, MVVM architecture, and Clean Architecture principles. The app displays a list of products and allows users to view product details.
+This is a minimal Android application built with Kotlin, MVVM architecture, and Clean Architecture principles. The app displays a list of data and allows users to view data details.
 
 ## Project Structure
 

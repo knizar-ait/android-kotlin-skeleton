@@ -38,10 +38,10 @@ class ListAdapter(
 
         fun bind(data: Data) {
             nameTextView.text = data.name
-            priceTextView.text = data.price.toString()
+            descriptionTextView.text = data.description
 
             itemView.setOnClickListener {
-                onProductClick(product)
+                onDataClick(data)
             }
         }
     }
